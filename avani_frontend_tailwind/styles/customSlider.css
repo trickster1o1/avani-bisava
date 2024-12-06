@@ -1,0 +1,91 @@
+.slider-cont {
+    height: 80vh;
+    overflow: hidden;
+} .slider-cont div {
+    height: 100%;
+} .slider-cont div img {
+    /* width: auto;
+    height: 100%; */
+    object-fit: cover;
+} .slider-cont div.snap-center{
+    height: 100%;
+} .slider-cont div.space-x-3{
+    height: fit-content;
+}
+/* .testi-cont .px-4 {
+    display: none;
+} */
+.testi-cont .px-4 button span{
+    background-color: #f9dabb;
+}.testi-cont .px-4 button span:hover{
+    background-color: #6d8368;
+} .slider-cont .c-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+} .testi-cont > div {
+    height: 100%;
+} .org-cont img{
+    height: 5em;
+    width: auto;
+}
+
+/* button css */
+.custom-btn {
+    transition: all .2s ease-in-out;
+}
+.custom-btn:hover {
+    background-color: #faecd2;
+    border-color: #fff6e4;
+}
+/* ========== */
+
+/* ig card */
+.ig-cont img {
+    transition: all .4s ease-in-out;
+}
+.ig-cont .cursor-pointer:hover img {
+    transform: scale(1.4);
+}
+
+/* ======= */
+
+
+/* responseive */
+@media screen and (max-width: 1210px) {
+    .slider-cont div img {
+        height: 100%;
+        width: auto;
+    } .c-overlay div {
+        width: 100%;
+    } .promise-cont {
+        /* height: 100vh; */
+        background-color: #edfae9;
+    } .promise-cont > img {
+        height: 100%;
+        width: auto;
+    } .ytd-cont > div:nth-child(2) > iframe {
+        max-width: 100%;
+    }
+} @media screen and (max-width: 400px) {
+    .c-overlay div {
+        font-size: 12pt;
+        padding: 1em;
+    } .promise-cont span {
+        font-size: 12pt;
+    }.promise-cont h1 {
+        font-size: 16pt;
+    } .promise-cont button {
+        margin-top: 0;
+    }
+} @media screen and (max-width: 500px) {
+    .testi-cont span {
+        font-size: 15pt;
+        line-height: 1.5em;
+    } .ytd-cont > div:nth-child(1) {
+        background: none;
+        background-color: #f8f4e9;
+    }
+}

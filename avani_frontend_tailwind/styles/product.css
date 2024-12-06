@@ -1,0 +1,53 @@
+.detailImageStyle{
+ display: flex;
+}
+
+.detailImageStyle .slick-dots {
+     display: flex !important;
+      flex-direction: column;
+ position: absolute;
+ left: -91px;
+ top: -5px;
+ width: 100%;
+ height: 100%;
+ padding: 0;
+ margin: 0;
+ list-style: none;
+ text-align: center;
+}
+
+.detailImageStyle .slick-dots li {
+ position: relative;
+ display: inline-block;
+ width: 50px;
+ height: 50px !important;
+ margin: 5px 5px;
+ cursor: pointer;
+}
+.detailImageStyle .slick-dots .slick-active {
+ border: 2px solid #dfcc7f;
+}
+
+.description ol{
+     list-style: decimal;
+     margin-left: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+     .detailImageStyle .slick-dots {
+               /* display: flex !important;
+               flex-direction: column;
+               position: absolute; */
+               /* left: -91px;
+               top: -5px; */
+               position: relative;
+                    flex-direction: row;
+                    left: 0;
+               width: 100%;
+               height: 100%;
+               padding: 0;
+               margin: 0;
+               list-style: none;
+               text-align: center;
+          }
+}
